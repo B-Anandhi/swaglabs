@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="8" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-13T22:42:42 IST" name="Suite" finished-at="2023-06-13T22:43:06 IST" duration-ms="23950">
+    <groups>
+      <group name="Sanity">
+        <method signature="LoginPageTest.logintest()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" name="logintest" class="com.swaglab.testcases.LoginPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="ContactPageTest.clickoncontactTest()[pri:0, instance:com.swaglab.testcases.ContactPageTest@5ffead27]" name="clickoncontactTest" class="com.swaglab.testcases.ContactPageTest"/>
+        <method signature="LoginPageTest.logintest()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" name="logintest" class="com.swaglab.testcases.LoginPageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-06-13T22:42:42 IST" name="SanityTest" finished-at="2023-06-13T22:43:06 IST" duration-ms="23950">
+      <class name="com.swaglab.testcases.ContactPageTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.swaglab.testcases.ContactPageTest@5ffead27]" started-at="2023-06-13T22:42:55 IST" name="launchApp" finished-at="2023-06-13T22:43:00 IST" duration-ms="5319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="clickoncontactTest()[pri:0, instance:com.swaglab.testcases.ContactPageTest@5ffead27]" started-at="2023-06-13T22:43:00 IST" name="clickoncontactTest" finished-at="2023-06-13T22:43:05 IST" duration-ms="5024" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Logo is present expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Logo is present expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.swaglab.testcases.ContactPageTest.clickoncontactTest(ContactPageTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickoncontactTest -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:com.swaglab.testcases.ContactPageTest@5ffead27]" started-at="2023-06-13T22:43:06 IST" name="exit" finished-at="2023-06-13T22:43:06 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.swaglab.testcases.ContactPageTest -->
+      <class name="com.swaglab.testcases.LoginPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" started-at="2023-06-13T22:42:41 IST" name="loadConfig" finished-at="2023-06-13T22:42:42 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" started-at="2023-06-13T22:42:42 IST" name="launchApp" finished-at="2023-06-13T22:42:47 IST" duration-ms="5592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="logintest()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" started-at="2023-06-13T22:42:47 IST" name="logintest" finished-at="2023-06-13T22:42:54 IST" duration-ms="6728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" started-at="2023-06-13T22:42:54 IST" name="exit" finished-at="2023-06-13T22:42:55 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+        <test-method is-config="true" signature="closeextent()[pri:0, instance:com.swaglab.testcases.LoginPageTest@47af7f3d]" started-at="2023-06-13T22:43:06 IST" name="closeextent" finished-at="2023-06-13T22:43:06 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeextent -->
+      </class> <!-- com.swaglab.testcases.LoginPageTest -->
+    </test> <!-- SanityTest -->
+  </suite> <!-- Suite -->
+</testng-results>
